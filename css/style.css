@@ -205,10 +205,11 @@ blockquote {
 }
 
 button {
-    border: 0;
+    border: none;
     margin: 0;
     padding: 0;
     cursor: pointer;
+    background: none;
 }
 
 .full {
@@ -233,6 +234,7 @@ button {
     float: left;
     position: relative;
     z-index: 1;
+    background-color: #f9f9f9; /*slightly off white to tell header */
 }
 
 .navbar-brand {
@@ -289,6 +291,66 @@ button.live_btn {
 .bg-light {
     background-color: transparent !important;
 }
+
+/* dropdown start */
+  
+  /* navbar padding */
+  .navbar a {
+    float: left;
+    padding: 14px 16px;    
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: none;
+    margin: 0; 
+  }
+  
+  /* Add a background color to navbar links on hover */
+  .nav-link a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(170, 200, 239);
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9dc3cf;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #ddd; /* Add a border to all links */
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .nav-link:hover .dropdown-content {
+    display: block;
+  } 
+/* dropdown end */
 
 
 /* header section end */
@@ -910,6 +972,7 @@ button.live_btn {
 
 .member_img {
     width: 100%;
+    height: 100%;
 }
 
 .member_name_text {
