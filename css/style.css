@@ -961,17 +961,30 @@ button.live_btn {
 
 /* creator section end */
 
-/* filter section start */
+/* search/filter section start */
 #myInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: fit-content; /* Full-width */
+  width: fit-content; /* Smaller-width */
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
 }
+
+#myInput2 {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Fullscreen-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+
+
 
 #myUL {
   /* Remove default list styling */
@@ -995,92 +1008,38 @@ button.live_btn {
 #myUL li a:hover:not(.header) {
   background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
+
+#myUL2 {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    padding-left: 1%; /* Add padding to left to give space between rows */
+    margin: 0;
+    width: fit-content;
+  }
+  
+  #myUL2 li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 6px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL2 li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+
+/* display vertical rows seperate horizontally */
+.h_format {
+    display: inline-block;
+    vertical-align: top;
+  }
+
 /* filter section end */
-
-
-/* contact section start */
-
-.contact_section {
-    width: 100%;
-    float: left;
-    padding-bottom: 90px;
-}
-
-.contact_taital {
-    width: 100%;
-    float: left;
-    font-size: 40px;
-    color: #000;
-    font-weight: bold;
-}
-
-.contact_section_2 {
-    width: 100%;
-    float: left;
-}
-
-.mail_section_1 {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.mail_text_1 {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #4f4e4e;
-    border: 1px solid #8e8e8e;
-    background-color: #ffff;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-.massage-bt {
-    color: #4f4e4e;
-    width: 100%;
-    height: 110px;
-    font-size: 18px;
-    background-color: #ffff;
-    padding: 40px 15px 0px 15px;
-    border: 1px solid #8e8e8e;
-    height: 110px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-.send_bt_1 {
-    width: 170px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.send_bt_1 a {
-    width: 100%;
-    float: left;
-    background-color: #7c2c0c;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0px;
-    font-size: 16px;
-    margin-top: 40px;
-    border: 1px solid #7c2c0c;
-    font-weight: 500;
-}
-
-.send_bt_1 a:hover {
-    background-color: transparent;
-    color: #7c2c0c;
-}
-
-.map_main {
-    width: 100%;
-    float: left;
-    padding-top: 80px;
-}
-
-
-/* contact section end */
 
 
 /* footer section start */

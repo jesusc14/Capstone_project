@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>About</title>
+      <title>Routes Overview</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -31,6 +31,7 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
    </head>
    <body>
       <!-- header section start -->
@@ -45,10 +46,10 @@
                   <li class="nav-item">
                      <a class="nav-link" href="index.html">Home</a>
                   </li>
-                  <li class="nav-item active">
+                  <li class="nav-item">
                      <a class="nav-link" href="about.html">About</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item active">
                      <a class="nav-link" href="routes-overview.html">Route Data</a>
                   </li>
                   <li class="nav-item">
@@ -70,31 +71,52 @@
       </div>
       <!-- header section end -->
 
-      <!-- about section start -->
-      <div class="about_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-8">
-                  <h2 class="about_taital">About Our WebApp</h2>
-                  <p class="about_text">This is a capstone project analyzing transit data and visualizing it can involve gathering
-                     and processing data from various sources, such as transit authorities or third-party providers.
-                     The data can then be analyzed and interpreted to provide insights into transit patterns,
-                     passenger behavior, and other relevant information. Visualization techniques, such as charts,
-                     maps, and graphs, can be employed to display the data in a meaningful way and aid in
-                     communicating the findings to stakeholders. The project can also involve developing predictive
-                     models to anticipate future transit trends and optimize operations. Overall, the goal of the
-                     capstone project is to use data analysis and visualization techniques to improve transit systems
-                     and enhance the user experience for passengers.
-                  </p>
-                  <div class="readmore_bt"><a href="#">Read more</a></div>
+      
+      <!-- news section start -->
+      <div class="news_section layout_padding">
+         <div style="padding-left: 5%;">
+            <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h1 class="news_taital">King County Routes</h1>
+                        <p class="news_text">Search for specific route data from King County Metro.</p>
+                     </div>
+                  </div>
+
+            <div class="news_section_2">
+                              <!-- search/filter start -->
+               <input type="text" id="myInput2" onkeyup="myFunction_ov()" placeholder="Search for specific route data...">
+               <!-- list -->
+               <div>
+                  <div class="h_format">
+                     <ul id="myUL">
+                        <li><a href="routes/routes_all.html">All Routes</a></li>
+                        <li><a href="routes/routes.html">Top Routes</a></li>
+                        <li><a href="#">Route 1</a></li>
+                        <li><a href="#">Route 2</a></li>   
+                        <li><a href="#">Route 3</a></li>
+                        <li><a href="#">Route 4</a></li>   
+                        <li><a href="#">Route 5</a></li>
+                        <li><a href="#">Route 6</a></li>
+                        <li><a href="#">Route 7</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="h_format">
+                     <ul id="myUL2">
+                        <li><a href="routes.html">Peak Route Times</a></li>
+                        <li><a href="routes.html">Route Equity</a></li>
+                        <li><a href="routes.html">Passenger Satisfaction</a></li>
+                     </ul>
+                  </div>
                </div>
-               <div class="col-sm-4">
-                  <div class="about_img"><img src="images/busicon.png"></div>
-               </div>
+               <!-- list end  -->
+            </div>
+         <!-- search/filter end -->
             </div>
          </div>
       </div>
-      <!-- about section end -->
+      <!-- news section end -->
       
       <!-- footer section start -->
       <div class="footer_section layout_padding margin_top_90">
@@ -110,7 +132,7 @@
                         <div class="footer_menu">
                            <ul>
                               <li><a href="index.html">Home</a></li>
-                              <li><a href="routes-overview.html">Daniel</a></li>
+                              <li><a href="routes.html">Daniel</a></li>
                               <li><a href="KCM/index.html">Jesus</a></li>
                            </ul>
                         </div>
@@ -150,19 +172,22 @@
             <p class="update_text">Last Updated: May 18, 2023</p>
          </div>
       </div>
-      <!-- update section end -->
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
       <script src="js/plugin.js"></script>
+      <!--filter js-->
+      <script src="js/filter.js"></script>
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
+
+      <script src="https://public.tableau.com/app/profile/daniel.prasetyo/viz/KingCounty-TopRouteRidership/TopRouteWeekdayRidershipSpring2021-2022?publish=yes/javascripts/api/tableau-2.min.js"></script>   
    </body>
 </html>
 
