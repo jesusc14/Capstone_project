@@ -35,58 +35,56 @@
    </head>
    <body>
       <!-- header section start -->
-      <div class="header_section">         
+      <div class="header_section">
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand"><a href="index.html"><img src="images/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav mr-auto">
-
-                  <li class="nav-item">
-                     <a class="nav-link" href="index.html">Home</a>
-                  </li>
-
-                  <li class="nav-item">
-                     <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  
-                  <!-- dropdown button for route data to select different data -->
-                  <li class="nav-item active">
-                     <div class="nav-link">
-                        <button class="dropbtn">
-                           <a class="nav-link" href="routes-overview.html">
-                           ROUTE DATA 
-                          <i class="fa fa-caret-down"></i>
-                           </a>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Peak </a>
-                          <a href="#">Popular Payment Methods</a>
-                          <a href="#">Peak Hours</a>
-                        </div>
-                      </div>
-                  </li>
-                  
-                  <li class="nav-item">
-                     <a class="nav-link" href="KCM/index.html">Route Planning & Stop Map</a>
-                  </li>
-
-                  <li class="nav-item">
-                     <a class="nav-link" href="index.html">Mariama</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                     <a class="nav-link" href="index.html">Brandon</a>
-                  </li>
-               </ul>
-               <form class="form-inline my-2 my-lg-0">
-                  <div class="search_icon"><a href="#"><img src="images/search-icon.png"></a></div>
-                  <button class="live_btn" type="submit">Live</button>
-               </form>
-            </div>
-         </nav>      
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                     </li>
+   
+                      <!-- dropdown button for route data to select different data -->
+                      <li class="nav-item active">
+                        <div class="nav-link">
+                           <button class="dropbtn">
+                              <a class="nav-link active" href="routes-overview.html"> <!-- Daniel -->
+                              ROUTE DATA 
+                             <i class="fa fa-caret-down"></i>
+                              </a>
+                           </button>
+                           <div class="dropdown-content">
+                             <a href="routes/passenger_equity_all.html">Passenger Data</a>
+                             <a href="#">Popular Payment Methods</a>
+                             <a href="#">Peak Hours</a>
+                           </div>
+                         </div>
+                     </li>
+   
+                     <li class="nav-item">
+                        <a class="nav-link" href="KCM/index.html">Route Planning & Stop Map</a> <!-- Jesus -->
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">Delays in Transit</a> <!-- Mariama -->
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">COVID and Health</a> <!-- Brandon -->
+                     </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                     <div class="search_icon"><a href="https://app.tripplanner.kingcounty.gov/hiwire?.a=iNextBus"><img
+                              src="images/search-icon.png"></a></div>
+                     <button class="live_btn" type="submit">Live</button>
+                  </form>
+               </div>
+         </nav>
       </div>
       <!-- header section end -->
 
@@ -124,8 +122,8 @@
                   <div class="h_format">
                      <ul id="myUL2">
                         <li><a href="routes.html">Peak Route Times</a></li>
-                        <li><a href="routes.html">Route Equity</a></li>
-                        <li><a href="routes.html">Passenger Satisfaction</a></li>
+                        <li><a href="routes/passenger_equity_top.html">Route Equity</a></li>
+                        <li><a href="routes/passenger_satisfaction.html">Passenger Satisfaction</a></li>
                      </ul>
                   </div>
                </div>
@@ -188,7 +186,7 @@
       <!-- update section -->
       <div class="update_section">
          <div class="container">
-            <p class="update_text">Last Updated: May 18, 2023</p>
+            <p class="update_text">Last Updated: May 23, 2023</p>
          </div>
       </div>
       <!-- Javascript files-->
