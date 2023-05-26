@@ -724,17 +724,17 @@ button.live_btn {
 }
 
 
-/* mission section end */
+/* purpose section end */
 
 
-/* news section start */
+/* route section start */
 
-.news_section {
+.route_section {
     width: 100%;
     float: left;
 }
 
-.news_taital {
+.route_taital {
     width: 100%;
     float: left;
     font-size: 40px;
@@ -744,7 +744,7 @@ button.live_btn {
     font-family: 'Open Sans', sans-serif;
 }
 
-.news_text {
+.route_text {
     width: 100%;
     float: left;
     font-size: 16px;
@@ -753,7 +753,7 @@ button.live_btn {
     font-family: 'Open Sans', sans-serif;
 }
 
-.news_section_2 {
+.route_section_2 {
     width: 100%;
     float: left;
     padding-top: 40px;
@@ -846,7 +846,7 @@ button.live_btn {
 }
 
 
-/* news section end */
+/* route section end */
 
 
 /* events section start */
