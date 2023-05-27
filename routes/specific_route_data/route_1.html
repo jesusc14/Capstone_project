@@ -9,10 +9,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>King County Metro Data - Route 1</title>
+      <title>Route 1 - King County Metro Data</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
-      <meta name="author" content="">
+      <meta name="author" content="Daniel Prasetyo">
       <!-- bootstrap css -->
       <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
       <!-- style css -->
@@ -32,25 +32,6 @@
       <link rel="stylesheet" href="../../css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 
-      <!-- tableau js start -->
-      <script type="text/javascript"
-	    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-      <script type="text/javascript">
-         function initViz() {
-             var containerDiv = document.getElementById("vizContainer"),
-                 url = "http://public.tableau.com/views/KingCounty-AllRouteRidership/RouteWeekdayRidershipSpring2021-2022",
-                 options = {
-                     hideTabs: true,
-                     onFirstInteractive: function () {
-                         console.log("Run this code when the viz has finished loading.");
-                     }
-                 };
- 
-             var viz = new tableau.Viz(containerDiv, url, options);
-             // Create a viz object and embed it in the container div.
-         }
-     </script>
-     <!-- tableau js end -->
    </head>
 
    <style>
@@ -61,7 +42,7 @@
       }
 
       td, th {
-      border: 1px solid #dddddd;
+      border: 1px solid #939393;
       text-align: left;
       padding: 8px;
       }
@@ -130,23 +111,6 @@
       
       <!-- route section start -->
       <div class="route_section layout_padding">
-      <div style="padding-left: 5%;">
-         <!-- search/filter start -->
-         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for route">
-
-         <ul id="myUL">
-         <li><a href="#">Route 1</a></li>
-         <li><a href="#">Route 2</a></li>
-   
-         <li><a href="#">Route 3</a></li>
-         <li><a href="#">Route 4</a></li>
-   
-         <li><a href="#">Route 5</a></li>
-         <li><a href="#">Route 6</a></li>
-         <li><a href="#">Route 7</a></li>
-         </ul>
-      </div>
-         <!-- search/filter end -->
 
          <div class="container">
             <div class="row">
@@ -160,14 +124,14 @@
                <table>
                   <tr>
                     <th>Route</th>
-                    <th>Sp 21 Ridership (Weekday)</th>
-                    <th>Sp 22 Ridership (Weekday)</th>
-                    <th>Route Equity</th>
+                    <th>Spring 2021 Ridership (Weekday)</th>
+                    <th>Spring 2022 Ridership (Weekday)</th>
+                    <th>Route Equity Rating</th>
                   </tr>
                   <tr>
                     <td>Route 1</td>
                     <td>1,021</td>
-                    <td>1535</td>
+                    <td>1,535</td>
                     <td>2.8 / 5</td>
                   </tr>
                 </table>
