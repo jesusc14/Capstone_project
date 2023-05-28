@@ -9,10 +9,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Routes</title>
+      <title>Top Route Equity Ratings - King County Metro Data</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
-      <meta name="author" content="">
+      <meta name="author" content="Daniel Prasetyo">
       <!-- bootstrap css -->
       <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
       <!-- style css -->
@@ -70,48 +70,69 @@
                         <a class="nav-link" href="../about.html">About</a>
                      </li>
    
-                      <!-- dropdown button for route data to select different data -->
-                      <li class="nav-item">
-                        <div class="nav-link">
-                           <button class="dropbtn">
-                              <a class="nav-link active" href="../routes-overview.html"> <!-- Daniel -->
-                              ROUTE DATA 
-                             <i class="fa fa-caret-down"></i>
-                              </a>
-                           </button>
-                           <div class="dropdown-content">
-                             <a href="routes/passenger_equity_all.html">Passenger Data</a>
-                             <a href="#">Popular Payment Methods</a>
-                             <a href="#">Peak Hours</a>
-                           </div>
-                         </div>
-                     </li>
-   
-                     <li class="nav-item">
-                        <a class="nav-link" href="../KCM/index.html">Route Planning & Stop Map</a> <!-- Jesus -->
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Delays in Transit</a> <!-- Mariama -->
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">COVID and Health</a> <!-- Brandon -->
-                     </li>
-                  </ul>
+                      
+                  <!-- dropdown button for route data to select different data -->
+                  <li class="nav-item">
+                     <div class="nav-link">
+                        <button class="dropbtn">
+                           <a class="nav-link active" href="../routes-overview.html"> <!-- Daniel -->
+                           ROUTE DATA 
+                          <i class="fa fa-caret-down"></i>
+                           </a>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="../routes/passenger_equity_all.html">Passenger Equity</a>
+                          <a href="../routes/peak_hours.html">Peak Route Hours</a>
+                          <a href="../routes/payment.html">Top Payment Methods</a>
+                        </div>
+                      </div>
+                  </li>
+
+                  <!-- dropdown button for route planning -->
+                  <li class="nav-item">
+                     <div class="nav-link">
+                        <button class="dropbtn">
+                           <a class="nav-link" href="../routes-overview.html"> <!-- Jesus -->
+                              Route Planning
+                              <i class="fa fa-caret-down"></i>
+                           </a>
+                        </button>
+                        <div class="dropdown-content">
+                           <a href="../KCM/index.html">Stop Map</a>
+                           <a href="../jesus_route_planning/route_planning.html">Route Planning</a>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Delays in Transit</a> <!-- Mariama -->
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">COVID and Health</a> <!-- Brandon -->
+                  </li>
+               </ul>
+               <!--
+                     
                   <form class="form-inline my-2 my-lg-0">
                      <div class="search_icon"><a href="https://app.tripplanner.kingcounty.gov/hiwire?.a=iNextBus"><img
-                              src="../images/search-icon.png"></a></div>
+                              src="images/search-icon.png"></a></div>
                      <button class="live_btn" type="submit">Live</button>
                   </form>
-               </div>
-         </nav>
-      </div>
-      <!-- header section end -->
+
+                  -->
+            </div>
+      </nav>
+   </div>
+   <!-- header section end -->
 
       
       <!-- route section start -->
       <div class="route_section layout_padding">
+
+      <!-- search/filter start --> 
+      <!--
       <div style="padding-left: 5%;">
-         <!-- search/filter start -->
+         
+
          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for route">
 
          <ul id="myUL">
@@ -126,6 +147,7 @@
          <li><a href="#">Route 7</a></li>
          </ul>
       </div>
+   -->
          <!-- search/filter end -->
 
          <div class="container">
@@ -144,10 +166,13 @@
                  <!-- tableau graph viz end -->
                   <div class="col-md-6">
                      <h1 class="give_taital">Analysis</h1>
-                     <p class="ipsum_text">variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by<br>
-                        injected humour, or randomised v<br>
-                        ariations of passages of Lorem Ipsum <br>
-                        available, but the majority have suffered alteration in some form, by injected humour, or randomised 
+                     <p class="ipsum_text">This is a visual graph created in Tableau that displays the top 10 of the Passenger Equity
+                        Ratings for King County Metro Routes. Not every metro route has an equity rating available, either from
+                        a lack of passenger reviews on that specific route, or the route was rerouted or discontinued, which could
+                        be from Light Rail reroutes or COVID impacts. <br> <br>
+                        Here, we can see that the highest equity rating is a <b>4.6</b> / 5,
+                        from the RapidRide A Line, followed by a <b>4.4</b> rating for Route 162.
+                        The lowest rated route here is Route 160, with a rating of <b>4.1</b>.
                      </p>
                      
                   </div>

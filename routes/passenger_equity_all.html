@@ -80,38 +80,57 @@
                               </a>
                            </button>
                            <div class="dropdown-content">
-                             <a href="routes/passenger_equity_all.html">Passenger Data</a>
-                             <a href="#">Popular Payment Methods</a>
-                             <a href="#">Peak Hours</a>
+                             <a href="passenger_equity_all.html">Passenger Equity</a>
+                             <a href="peak_hours.html">Peak Route Hours</a>
+                             <a href="payment.html">Top Payment Methods</a>
                            </div>
                          </div>
-                     </li>
-   
-                     <li class="nav-item">
-                        <a class="nav-link" href="../KCM/index.html">Route Planning & Stop Map</a> <!-- Jesus -->
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Delays in Transit</a> <!-- Mariama -->
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">COVID and Health</a> <!-- Brandon -->
-                     </li>
-                  </ul>
+                     </li>   
+                    
+                  <!-- dropdown button for route planning -->
+                  <li class="nav-item">
+                     <div class="nav-link">
+                        <button class="dropbtn">
+                           <a class="nav-link" href="../jesus_route_planning/route_planning.html"> <!-- Jesus -->
+                              Route Planning
+                              <i class="fa fa-caret-down"></i>
+                           </a>
+                        </button>
+                        <div class="dropdown-content">
+                           <a href="../KCM/index.html">Stop Map</a>
+                           <a href="../jesus_route_planning/route_planning.html">Route Planning</a>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="../index.html">Delays in Transit</a> <!-- Mariama -->
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="../index.html">COVID and Health</a> <!-- Brandon -->
+                  </li>
+               </ul>
+               <!--
+                     
                   <form class="form-inline my-2 my-lg-0">
                      <div class="search_icon"><a href="https://app.tripplanner.kingcounty.gov/hiwire?.a=iNextBus"><img
-                              src="../images/search-icon.png"></a></div>
+                              src="images/search-icon.png"></a></div>
                      <button class="live_btn" type="submit">Live</button>
                   </form>
-               </div>
-         </nav>
-      </div>
-      <!-- header section end -->
+
+                  -->
+            </div>
+      </nav>
+   </div>
+   <!-- header section end -->
 
       
       <!-- route section start -->
       <div class="route_section layout_padding">
+           <!-- search/filter start --> 
+      <!--
       <div style="padding-left: 5%;">
-         <!-- search/filter start -->
+         
+
          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for route">
 
          <ul id="myUL">
@@ -126,13 +145,14 @@
          <li><a href="#">Route 7</a></li>
          </ul>
       </div>
+   -->
          <!-- search/filter end -->
 
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <h1 class="route_taital">King County Routes Equity Ratings</h1>
-                  <p class="route_text">All equity (fairness) ratings for all King County routes.</p>
+                  <h1 class="route_taital">All King County Routes Equity Ratings</h1>
+                  <p class="route_text">All passenger equity ratings for all King County routes.</p>
                </div>
             </div>
             <div class="route_section_2">
@@ -144,10 +164,13 @@
                  <!-- tableau graph viz end -->
                   <div class="col-md-6">
                      <h1 class="give_taital">Analysis</h1>
-                     <p class="ipsum_text">variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by<br>
-                        injected humour, or randomised v<br>
-                        ariations of passages of Lorem Ipsum <br>
-                        available, but the majority have suffered alteration in some form, by injected humour, or randomised 
+                     <p class="ipsum_text">This is a visual graph created in Tableau that displays all of the Passenger Equity
+                        Ratings for King County Metro Routes. Not every metro route has an equity rating available, either from
+                        a lack of passenger reviews on that specific route, or the route was rerouted or discontinued, which could
+                        be from Light Rail reroutes or COVID impacts. <br> <br>
+                        Here, we can see a total of 144 equity ratings, with an average rating of <b>2.9 / 5</b>, ranging from the highest rating, a <b>4.6</b>
+                        from the RapidRide A Line, followed by a <b>4.4</b> rating for Route 162.
+                        The lowest rated route is Route 775, with a rating of <b>2.0</b>.
                      </p>
                      
                   </div>

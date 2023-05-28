@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Top Routes - King County Metro Data</title>
+      <title>Top Payment Methods - King County Metro Data</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="Daniel Prasetyo">
@@ -38,7 +38,7 @@
       <script type="text/javascript">
          function initViz() {
              var containerDiv = document.getElementById("vizContainer"),
-                 url = "http://public.tableau.com/views/KingCountyData_16845578100620/TopRouteWeekdayRidershipSpring2021-2022",
+                 url = "http://public.tableau.com/views/KingCounty-AllPassengerEquity/RoutePassengerEquity",
                  options = {
                      hideTabs: true,
                      onFirstInteractive: function () {
@@ -74,31 +74,31 @@
                   <li class="nav-item">
                      <div class="nav-link">
                         <button class="dropbtn">
-                           <a class="nav-link active" href="routes-overview.html"> <!-- Daniel -->
+                           <a class="nav-link active" href="../routes-overview.html"> <!-- Daniel -->
                            ROUTE DATA 
                           <i class="fa fa-caret-down"></i>
                            </a>
                         </button>
                         <div class="dropdown-content">
-                          <a href="routes/passenger_equity_all.html">Passenger Equity</a>
-                          <a href="routes/peak_hours.html">Peak Route Hours</a>
-                          <a href="routes/payment.html">Top Payment Methods</a>
+                          <a href="../routes/passenger_equity_all.html">Passenger Equity</a>
+                          <a href="../routes/peak_hours.html">Peak Route Hours</a>
+                          <a href="../routes/payment.html">Top Payment Methods</a>
                         </div>
                       </div>
                   </li>
-                  
+
                   <!-- dropdown button for route planning -->
                   <li class="nav-item">
                      <div class="nav-link">
                         <button class="dropbtn">
-                           <a class="nav-link" href="jesus_route_planning/route_planning.html"> <!-- Jesus -->
+                           <a class="nav-link" href="../routes-overview.html"> <!-- Jesus -->
                               Route Planning
                               <i class="fa fa-caret-down"></i>
                            </a>
                         </button>
                         <div class="dropdown-content">
-                           <a href="KCM/index.html">Stop Map</a>
-                           <a href="jesus_route_planning/route_planning.html">Route Planning</a>
+                           <a href="../KCM/index.html">Stop Map</a>
+                           <a href="../jesus_route_planning/route_planning.html">Route Planning</a>
                         </div>
                      </div>
                   </li>
@@ -127,26 +127,47 @@
       <!-- route section start -->
       <div class="route_section layout_padding">
 
+      <!-- search/filter start --> 
+      <!--
+      <div style="padding-left: 5%;">
+         
+
+         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for route">
+
+         <ul id="myUL">
+         <li><a href="#">Route 1</a></li>
+         <li><a href="#">Route 2</a></li>
+   
+         <li><a href="#">Route 3</a></li>
+         <li><a href="#">Route 4</a></li>
+   
+         <li><a href="#">Route 5</a></li>
+         <li><a href="#">Route 6</a></li>
+         <li><a href="#">Route 7</a></li>
+         </ul>
+      </div>
+   -->
+         <!-- search/filter end -->
+
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <h1 class="route_taital">Most Popular King County Routes</h1>
-                  <p class="route_text">The most popular routes from King County Metro from Spring 2021 - 2022.</p>
+                  <h1 class="route_taital">Top Payment Methods for King County Metro</h1>
+                  <p class="route_text">The most used methods of payment for King County Metro.</p>
                </div>
             </div>
             <div class="route_section_2">
                <div class="row">
-                  <!-- tableau graph viz start -->
-                  <body onload="initViz();">
-                     <div id="vizContainer" style="width: 600em;; height:40em;"></div>
-                 </body>
-                 <!-- tableau graph viz end -->
                   <div class="col-md-6">
-                     <h1 class="give_taital">Analysis</h1>
-                     <p class="ipsum_text">variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by<br>
-                        injected humour, or randomised v<br>
-                        ariations of passages of Lorem Ipsum <br>
-                        available, but the majority have suffered alteration in some form, by injected humour, or randomised 
+                     <h1 class="give_taital">Payment Methods</h1>
+                     <p class="ipsum_text">
+                        1. ORCA Card (77%) - 741 passengers.<br>
+                        2. Cash / Ease of Payment: (20%) - 151 passengers.<br>
+                        3. ORCA Lift: (3%) - 75 passengers. <br> <br> <br>
+
+                        <i>Note: The surveyed data comes from 
+                           <a href="https://kingcounty.gov/~/media/depts/metro/accountability/reports/2021/2021-rider-non-rider-survey-final.pdf">
+                              King County's 2021 Rider and Non-Rider Survey Report</a>.</i>
                      </p>
                      
                   </div>
@@ -207,7 +228,7 @@
       <!-- update section -->
       <div class="update_section">
          <div class="container">
-            <p class="update_text">Last Updated: May 18, 2023</p>
+            <p class="update_text">Last Updated: May 23, 2023</p>
          </div>
       </div>
       <!-- Javascript files-->

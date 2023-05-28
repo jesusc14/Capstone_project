@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>King County Metro Data - All Routes Ridership</title>
+      <title>All Routes Ridership - King County Metro Data</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -71,62 +71,61 @@
                      </li>
    
                       <!-- dropdown button for route data to select different data -->
-                      <li class="nav-item active">
-                        <div class="nav-link">
-                           <button class="dropbtn">
-                              <a class="nav-link active" href="../routes-overview.html"> <!-- Daniel -->
-                              ROUTE DATA 
-                             <i class="fa fa-caret-down"></i>
-                              </a>
-                           </button>
-                           <div class="dropdown-content">
-                             <a href="passenger_equity_all.html">Passenger Data</a>
-                             <a href="#">Popular Payment Methods</a>
-                             <a href="#">Peak Hours</a>
-                           </div>
-                         </div>
-                     </li>
-   
-                     <li class="nav-item">
-                        <a class="nav-link" href="../KCM/index.html">Route Planning & Stop Map</a> <!-- Jesus -->
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Delays in Transit</a> <!-- Mariama -->
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">COVID and Health</a> <!-- Brandon -->
-                     </li>
-                  </ul>
+                  <li class="nav-item">
+                     <div class="nav-link">
+                        <button class="dropbtn">
+                           <a class="nav-link active" href="routes-overview.html"> <!-- Daniel -->
+                           ROUTE DATA 
+                          <i class="fa fa-caret-down"></i>
+                           </a>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="routes/passenger_equity_all.html">Passenger Equity</a>
+                          <a href="routes/peak_hours.html">Peak Route Hours</a>
+                          <a href="routes/payment.html">Top Payment Methods</a>
+                        </div>
+                      </div>
+                  </li>
+                  
+                  <!-- dropdown button for route planning -->
+                  <li class="nav-item">
+                     <div class="nav-link">
+                        <button class="dropbtn">
+                           <a class="nav-link" href="jesus_route_planning/route_planning.html"> <!-- Jesus -->
+                              Route Planning
+                              <i class="fa fa-caret-down"></i>
+                           </a>
+                        </button>
+                        <div class="dropdown-content">
+                           <a href="KCM/index.html">Stop Map</a>
+                           <a href="jesus_route_planning/route_planning.html">Route Planning</a>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Delays in Transit</a> <!-- Mariama -->
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">COVID and Health</a> <!-- Brandon -->
+                  </li>
+               </ul>
+               <!--
+                     
                   <form class="form-inline my-2 my-lg-0">
                      <div class="search_icon"><a href="https://app.tripplanner.kingcounty.gov/hiwire?.a=iNextBus"><img
-                              src="../images/search-icon.png"></a></div>
+                              src="images/search-icon.png"></a></div>
                      <button class="live_btn" type="submit">Live</button>
                   </form>
-               </div>
-         </nav>
-      </div>
-      <!-- header section end -->
+
+                  -->
+            </div>
+      </nav>
+   </div>
+   <!-- header section end -->
 
       
       <!-- route section start -->
       <div class="route_section layout_padding">
-      <div style="padding-left: 5%;">
-         <!-- search/filter start -->
-         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for route">
-
-         <ul id="myUL">
-         <li><a href="#">Route 1</a></li>
-         <li><a href="#">Route 2</a></li>
-   
-         <li><a href="#">Route 3</a></li>
-         <li><a href="#">Route 4</a></li>
-   
-         <li><a href="#">Route 5</a></li>
-         <li><a href="#">Route 6</a></li>
-         <li><a href="#">Route 7</a></li>
-         </ul>
-      </div>
-         <!-- search/filter end -->
 
          <div class="container">
             <div class="row">
