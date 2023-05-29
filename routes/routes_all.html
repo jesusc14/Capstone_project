@@ -19,8 +19,6 @@
       <link rel="stylesheet" type="text/css" href="../css/style.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="../css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="../images/fevicon.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -74,15 +72,15 @@
                   <li class="nav-item">
                      <div class="nav-link">
                         <button class="dropbtn">
-                           <a class="nav-link active" href="routes-overview.html"> <!-- Daniel -->
+                           <a class="nav-link active" href="../routes-overview.html"> <!-- Daniel -->
                            ROUTE DATA 
                           <i class="fa fa-caret-down"></i>
                            </a>
                         </button>
                         <div class="dropdown-content">
-                          <a href="routes/passenger_equity_all.html">Passenger Equity</a>
-                          <a href="routes/peak_hours.html">Peak Route Hours</a>
-                          <a href="routes/payment.html">Top Payment Methods</a>
+                          <a href="passenger_equity_all.html">Passenger Equity</a>
+                          <a href="peak_hours.html">Peak Route Hours</a>
+                          <a href="payment.html">Top Payment Methods</a>
                         </div>
                       </div>
                   </li>
@@ -91,14 +89,14 @@
                   <li class="nav-item">
                      <div class="nav-link">
                         <button class="dropbtn">
-                           <a class="nav-link" href="jesus_route_planning/route_planning.html"> <!-- Jesus -->
+                           <a class="nav-link" href="../jesus_route_planning/route_planning.html"> <!-- Jesus -->
                               Route Planning
                               <i class="fa fa-caret-down"></i>
                            </a>
                         </button>
                         <div class="dropdown-content">
-                           <a href="KCM/index.html">Stop Map</a>
-                           <a href="jesus_route_planning/route_planning.html">Route Planning</a>
+                           <a href="../KCM/index.html">Stop Map</a>
+                           <a href="../jesus_route_planning/route_planning.html">Route Planning</a>
                         </div>
                      </div>
                   </li>
@@ -131,7 +129,7 @@
             <div class="row">
                <div class="col-sm-12">
                   <h1 class="route_taital">All King County Routes</h1>
-                  <p class="route_text">The ridership from all routes from King County Metro from Spring 2021 - 2022.</p>
+                  <p class="route_text">This shows all route ridership data from King County Metro from Spring 2021 - 2022.</p>
                </div>
             </div>
             <div class="route_section_2">
@@ -143,10 +141,22 @@
                  <!-- tableau graph viz end -->
                   <div class="col-md-6">
                      <h1 class="give_taital">Analysis</h1>
-                     <p class="ipsum_text">variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by<br>
-                        injected humour, or randomised v<br>
-                        ariations of passages of Lorem Ipsum <br>
-                        available, but the majority have suffered alteration in some form, by injected humour, or randomised 
+                     <p class="ipsum_text">This is all of the ridership data for King County Metro Routes during Spring of 2021 and 2022. 
+                        Not every metro route has a recorded number of riders, either from a lack of passenger reviews on that specific route, 
+                        or the route was rerouted or discontinued, which could be from Light Rail reroutes or COVID impacts. Some routes
+                        may display having 0 riders, either the route had 0 riders during that year, or data for that route could not be found.<br><br>
+
+                        The route with the most riders was the <a href="specific_route_data/e_line.html">RapidRide E Line</a>, with 8,225 riders in 2021, and
+                        10,310 riders in 2022. It can be seen from the metro data that 2022 had more riders than 2021 for most routes, which may be due to the impact of
+                        COVID-19, where public transportation decreased by a large margin, starting in 2019. <br>
+                        Some exceptions are routes 
+                        <a href="specific_route_data/193">193</a> and <a href="specific_route_data/route_303.html">303</a>.
+                        
+                        <br><br>
+                        <i>Note: The data available only shows ridership data from Spring 2021 - 2022 on Weekdays only. <br>
+                           Data found from 
+                           <a href="https://kingcounty.gov/~/media/depts/metro/accountability/reports/2022/system-evaluation">King County Metro 2022 System Evaluation</a>
+                        </i>
                      </p>
                      
                   </div>
