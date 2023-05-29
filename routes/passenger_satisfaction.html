@@ -40,7 +40,7 @@
              var containerDiv = document.getElementById("vizContainer"),
                  url = "http://public.tableau.com/views/KingCounty-AnnualCustomerSatisfaction/AnnualKingCountyMetroCustomerSatisfaction",
                  options = {
-                     hideTabs: true,
+                     hideTabs: false, // was set to true at first, set to false so it displays on other devices
                      onFirstInteractive: function () {
                          console.log("Run this code when the viz has finished loading.");
                      }
