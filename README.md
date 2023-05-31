@@ -1,6 +1,8 @@
-# Capstone_project - Metro Data Web App
+# Capstone Project - Metro Data Web App
 This is a capstone project analyzing transit data and visualizing it can involve gathering and 
-processing data from various sources, such as transit authorities or third-party providers. 
+processing data from various sources, such as transit authorities or third-party providers.
+
+Created By: Daniel Prasetyo, Jesus Eduardo Celestino, Mariama Abdi, and Brandon Vuong.
 
 The purpose of this web app is to provide users with comprehensive analyses of public transit routes and efficient planning tools, 
 including the visualization of graphs depicting multiple different routes. By utilizing the GTFS-to-HTML tool and incorporating data visualization capabilities, 
