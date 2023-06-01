@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>About</title>
+      <title>About - King County Metro Data</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -35,75 +35,78 @@
    </head>
 
    <body>
-         <!-- header section start -->
-   <div class="header_section">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         <a class="navbar-brand"><a href="index.html"><img src="images/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                     <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="about.html">About</a>
-                  </li>
+  <!-- header section start -->
+  <div class="header_section">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand"><a href="index.html"><img src="images/logo.png"></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="about.html">About</a>
+               </li>
 
-                  <!-- dropdown button for route data to select different data -->
-                  <li class="nav-item">
-                     <div class="nav-link">
-                        <button class="dropbtn">
-                           <a class="nav-link" href="routes-overview.html"> <!-- Daniel -->
-                           ROUTE DATA 
-                          <i class="fa fa-caret-down"></i>
-                           </a>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="routes/passenger_equity_all.html">Passenger Equity</a>
-                          <a href="routes/peak_hours.html">Peak Route Hours</a>
-                          <a href="routes/payment.html">Top Payment Methods</a>
-                        </div>
-                      </div>
-                  </li>
-
-                  <!-- dropdown button for route planning -->
-                  <li class="nav-item">
-                     <div class="nav-link">
-                        <button class="dropbtn">
-                           <a class="nav-link" href="jesus_route_planning/route_planning.html"> <!-- Jesus -->
-                              Route Planning
-                              <i class="fa fa-caret-down"></i>
-                           </a>
-                        </button>
-                        <div class="dropdown-content">
-                           <a href="KCM/index.html">Stop Map</a>
-                           <a href="jesus_route_planning/route_planning.html">Route Planning</a>
-                        </div>
+               <!-- dropdown button for route data to select different data -->
+               <li class="nav-item">
+                  <div class="nav-link">
+                     <button class="dropbtn">
+                        <a class="nav-link" href="routes-overview.html"> <!-- Daniel -->
+                           ROUTE DATA
+                           <i class="fa fa-caret-down"></i>
+                        </a>
+                     </button>
+                     <div class="dropdown-content">
+                        <a href="routes/routes.html">Most Popular Routes</a>
+                        <a href="routes/passenger_equity_top.html">Top Route Equity Ratings</a>
+                       <a href="routes/passenger_equity_all.html">All Route Equity Ratings</a>
+                       <a href="routes/passenger_satisfaction.html">Annual Customer Satisfaction</a>
+                       <a href="routes/payment.html">Top Payment Methods</a>
+                       <a href="routes/peak_hours.html">Peak Metro Hours</a>
                      </div>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="index.html">Delays in Transit</a> <!-- Mariama -->
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="index.html">COVID and Health</a> <!-- Brandon -->
-                  </li>
-               </ul>
-               <!--
-                     
-                  <form class="form-inline my-2 my-lg-0">
-                     <div class="search_icon"><a href="https://app.tripplanner.kingcounty.gov/hiwire?.a=iNextBus"><img
-                              src="images/search-icon.png"></a></div>
-                     <button class="live_btn" type="submit">Live</button>
-                  </form>
+                  </div>
+               </li>
 
-                  -->
-            </div>
-      </nav>
-   </div>
-   <!-- header section end -->
+               <!-- dropdown button for route planning -->
+               <li class="nav-item">
+                  <div class="nav-link">
+                     <button class="dropbtn">
+                        <a class="nav-link" href="jesus_route_planning/route_planning.html"> <!-- Jesus -->
+                           Route Planning
+                           <i class="fa fa-caret-down"></i>
+                        </a>
+                     </button>
+                     <div class="dropdown-content">
+                        <a href="KCM/index.html">Stop Map</a>
+                        <a href="jesus_route_planning/route_planning.html">Route Planning</a>
+                     </div>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="delays.html">Delays in Transit</a> <!-- Mariama -->
+               </li>
+               <!-- <li class="nav-item">
+                  <a class="nav-link" href="index.html">COVID and Health</a> <Brandon>
+               </li> -->
+            </ul>
+            <!--
+                  
+               <form class="form-inline my-2 my-lg-0">
+                  <div class="search_icon"><a href="https://app.tripplanner.kingcounty.gov/hiwire?.a=iNextBus"><img
+                           src="images/search-icon.png"></a></div>
+                  <button class="live_btn" type="submit">Live</button>
+               </form>
+
+               -->
+         </div>
+   </nav>
+</div>
+<!-- header section end -->
 
       <!-- about section start -->
       <div class="about_section layout_padding">
@@ -113,15 +116,27 @@
                   <h2 class="about_taital">About Our WebApp</h2>
                   <p class="about_text">This is a capstone project analyzing transit data and visualizing it can involve gathering
                      and processing data from various sources, such as transit authorities or third-party providers.
+                     <br><br>
                      The data can then be analyzed and interpreted to provide insights into transit patterns,
                      passenger behavior, and other relevant information. Visualization techniques, such as charts,
                      maps, and graphs, can be employed to display the data in a meaningful way and aid in
                      communicating the findings to stakeholders. The project can also involve developing predictive
                      models to anticipate future transit trends and optimize operations. Overall, the goal of the
                      capstone project is to use data analysis and visualization techniques to improve transit systems
-                     and enhance the user experience for passengers.
+                     and enhance the user experience for passengers. 
+                     <br><br>
+                     The web app utilizes the GTFS-to-HTML tool to generate user-friendly interfaces that allow users to
+                  access and explore detailed information about various public transit routes. Users can easily navigate
+                  through the app to view route maps, schedules, and stop locations, enabling them to plan their trips
+                  effectively.
+                  <br> <br>
+                  In addition to route information, the web app leverages data visualization techniques to present
+                  graphs that illustrate multiple different routes. These graphs provide users with a visual
+                  representation of the transit network, allowing them to compare and analyze various routes in terms of
+                  factors such as travel time, frequency, and connectivity. By visualizing the data, the web app
+                  simplifies complex information and enables users to make informed decisions about their travel routes.
+                  <br> <br>
                   </p>
-                  <div class="readmore_bt"><a href="#">Read more</a></div>
                </div>
                <div class="col-sm-4">
                   <div class="about_img"><img src="images/busicon.png"></div>
@@ -131,61 +146,62 @@
       </div>
       <!-- about section end -->
       
-      <!-- footer section start -->
-      <div class="footer_section layout_padding margin_top_90">
-         <div class="container">
+   <!-- footer section start -->
+   <div class="footer_section layout_padding margin_top_90">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3">
+               <div class="footer_logo"><img src="images/footer-logo.png"></div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+               <h4 class="footer_taital">NAVIGATION</h4>
+               <div class="footer_menu_main">
+                  <div class="footer_menu_left">
+                     <div class="footer_menu">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="routes-overview.html">Route Data</a></li>
+                           <li><a href="KCM/index.html">Planning</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="footer_menu_right">
+                     <div class="footer_menu">
+                        <ul>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="delays.html">Delays</a></li>
+                           <!--<li><a href="index.html">Brandon</a></li> -->
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+               <p class="footer_text">Made for UW Bothell - CSS 496 Capstone Project</p>
+
+            </div>
+
+         </div>
+         <div class="footer_section_2">
             <div class="row">
-               <div class="col-sm-6 col-md-6 col-lg-3">
-                  <div class="footer_logo"><img src="images/footer-logo.png"></div>
-               </div>
-               <div class="col-sm-6 col-md-6 col-lg-3">
-                  <h4 class="footer_taital">NAVIGATION</h4>
-                  <div class="footer_menu_main">
-                     <div class="footer_menu_left">
-                        <div class="footer_menu">
-                           <ul>
-                              <li><a href="index.html">Home</a></li>
-                              <li><a href="routes-overview.html">Daniel</a></li>
-                              <li><a href="KCM/index.html">Jesus</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="footer_menu_right">
-                        <div class="footer_menu">
-                           <ul>
-                              <li><a href="about.html">About</a></li>
-                              <li><a href="index.html">Mariama</a></li>
-                              <li><a href="index.html">Brandon</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-6 col-lg-3">
-                  <p class="footer_text">Made for UW Bothell - CSS 496 Capstone Project</p>
+               <div class="col-sm-4 col-md-4 col-lg-3">
 
                </div>
-               
-            </div>
-            <div class="footer_section_2">
-               <div class="row">
-                  <div class="col-sm-4 col-md-4 col-lg-3">
 
-                  </div>
-
-               </div>
             </div>
          </div>
       </div>
-      <!-- footer section end -->
+   </div>
+   <!-- footer section end -->
 
-      <!-- update section -->
-      <div class="update_section">
-         <div class="container">
-            <p class="update_text">Last Updated: May 23, 2023</p>
-         </div>
+   <!-- update section -->
+   <div class="update_section">
+      <div class="container">
+         <p class="update_text">Last Updated: May 31, 2023</p>
       </div>
-      <!-- update section end -->
+   </div>
+   <!-- update section end -->
+
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
