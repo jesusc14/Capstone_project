@@ -18,7 +18,7 @@ function myFunction() {
 	}
   }
 
-  function myFunction_ov() {
+  function search() {
 	// Declare variables
 	var input, filter, ul, li, a, i, txtValue;
 	input = document.getElementById('myInput2');
@@ -31,12 +31,13 @@ function myFunction() {
 	for (i = 0; i < li.length; i++) {
 	  a = li[i].getElementsByTagName("a")[0];
 	  txtValue = a.textContent || a.innerText;
-	  if (txtValue.toUpperCase().indexOf(filter) > -1) {
-		li[i].style.display = "";
+	  // if(txtValue.toUpperCase().indexOf(filter) > -1)
+	  // handle case and empty input value
+	  if (filter!== "" && a.innerHTML.toUpperCase().indexOf(filter) > -1) { 
+		li[i].style.display = "block";
 	  } else {
 		li[i].style.display = "none";
 	  }
 	}
 }
 
-  

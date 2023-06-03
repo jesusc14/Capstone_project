@@ -122,12 +122,17 @@
 
             <div class="route_section_2">
                               <!-- search/filter start -->
-               <input type="text" id="myInput2" onkeyup="myFunction_ov()" placeholder="Search for specific route data...">
+               <input type="text" id="myInput2" onkeyup="search()" placeholder="Search or select specific route data...">
                <!-- list -->
                <div>
                   <div class="h_format">
+                     <!-- display All Routes as its own list, not same with number routes -->
+                     <ul id="allroutes">
+                        <li><a href="routes/routes_all.html">All Routes Ridership</a></li>
+                     </ul>
+                     
+
                      <ul id="myUL">
-                        <li><a href="routes/routes_all.html">All Routes</a></li>
                         <!-- specific routes -->
                           <li><a href="routes/specific_route_data/route_1.html">Route 1</a></li>
                           <li><a href="routes/specific_route_data/route_2.html">Route 2</a></li>
